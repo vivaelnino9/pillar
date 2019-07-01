@@ -1,0 +1,20 @@
+<h1>Organizations</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Stars</th>
+            <th>Forks</th>
+            <th>Contributors</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let org of organizations">
+            <td>{{ org.name }}</td>
+            <td>{{ org.stars }}</td>
+            <td>{{ org.forks }}</td>
+            <td>{{ org.contributors }}</td>
+        </tr>
+    </tbody>
+</table>

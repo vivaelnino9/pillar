@@ -1,0 +1,12 @@
+<h1 align="center">Create Organization</h1>
+
+<form [formGroup]="organizationForm" (ngSubmit)="onSubmit()" class="pure-form">
+    <small id="passwordHelpBlock" class="form-text text-muted" align="center">
+      Enter an organization name to get its repos
+    </small>
+    <input type="text" formControlName="name" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+
+    <button type="submit" value="Submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+
+  </form>
+
