@@ -13,5 +13,5 @@ from repos import views
 
 urlpatterns = [
     path('organizations/', views.OrganizationView.as_view()),
-    path('organization/<int:org_pk>/repos', views.organization_repos),
+    path('organizations/<int:org_pk>', views.organization_repos),
 ]

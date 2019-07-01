@@ -14,6 +14,10 @@ export class OrganizationService {
       return this.httpClient.get(this.API_URL);
   }
 
+  getOrganizationRepos(org_id){
+    return this.httpClient.get(this.API_URL + org_id);
+  }
+
   makeOrganization(organizationForm: FormGroup){
     return this.httpClient.post<any>(this.API_URL, organizationForm.value)
   }

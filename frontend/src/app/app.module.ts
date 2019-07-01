@@ -9,13 +9,15 @@ import { OrganizationCreateComponent } from './organization-create/organization-
 import { HttpClientModule } from  '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
+import { RepoListComponent } from './repo-list/repo-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrganizationListComponent,
     OrganizationCreateComponent,
-    NavComponent
+    NavComponent,
+    RepoListComponent
   ],
   imports: [
     BrowserModule,
